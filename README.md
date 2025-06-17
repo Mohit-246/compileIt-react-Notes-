@@ -1,0 +1,91 @@
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+
+previously to create react application without any external framework we will use the command - npx create-react-app
+
+to run it - npm start
+
+but create-react-app - depreceated 
+
+Stable version of react 19 was introduced
+
+
+-----------------------------------------------------
+
+
+
+What is ReactJS ?
+
+ReactJS is a frontend framework which you can use to build complex UI's by the support of virtual DOM, and JSX - you can seamlessly build UI Components.
+
+In Javascript - when you update any part of the DOM the entire DOM will be updated - more no of updatations
+
+Virtual DOM - It will update only one part or the part that needs to be updated no entire updation
+
+the document has other parts - that parts will not affect / updated.
+
+At final phase this virtual dom will create a copy and updates original DOM.
+
+- Diffing algorithm 
+
+
+JSX - Javascript + xml 
+
+- It supports javascript in the html
+
+you can use .jsx / .js as the extension.
+
+- The files in the react is called as "components".
+
+- It always starts with a function and we have to export that function.
+
+- Why to export ? - We can use re-usable components in the react so that it reduces so much of time for without redesigining the existed component.
+
+
+function Component() {
+    // pure js you have to write
+     return (
+        // html + js - you can write
+     )
+}
+
+export default Component;
+
+- Remember always, your component name starts with capitals.
+
+- Whatever the file name is you can give the component name - suggestable
+
+- Fragments - each and every component should be wrapped under single fragment 
+
+  <>             <div>
+         or 
+  </>            </div>
+
+- Always create your files or components inside the src folder
+
+
+  Everyday agenda
+
+  1. We learn something - code something in vs code
+  2. We push that code into github.
+  3. You have to fork my repository and open pull requests and I will also open pull requests you have to merge it.
+
+React Lecture 2 (17th June) - Displaying data, Adding style(2 ways), Conditional Rendering, Rendering lists
+
+ Adding style(2 ways) - by giving classname, inside the tag
+
+       - <div className="someName"> (React)  <div class="someName"> (HTML)
+
+       - <div style={{key: "value"}}> (React) <div style=""> (HTML)
