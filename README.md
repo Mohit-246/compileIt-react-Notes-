@@ -89,3 +89,14 @@ React Lecture 2 (17th June) - Displaying data, Adding style(2 ways), Conditional
        - <div className="someName"> (React)  <div class="someName"> (HTML)
 
        - <div style={{key: "value"}}> (React) <div style=""> (HTML)
+
+  Conditional Rendering - It acts as a conditional statement if the condition is true it will display the content 
+
+  {condition &&
+           <>
+                 
+           </>
+  }
+
+Lecture 3 - Props, Data passing, State in react (usestate, useffect)
+

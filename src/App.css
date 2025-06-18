@@ -14,3 +14,17 @@
   height: 150px;
   border-radius: 50%;
 }
+
+.fruits {
+  width: 100px;
+  height: 100px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  text-align: center;
+  margin: 2%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,5 +1,6 @@
 import './App.css'
 import FirstComponent from './FirstComponent'
+import SecondComponent from './SecondComponent'
 
 function App() {
  
@@ -17,6 +18,8 @@ function App() {
       {/* <FirstComponent />
 
       <FirstComponent /> */}
+
+      <SecondComponent />
   </>
    
   )

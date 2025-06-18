@@ -1,5 +1,9 @@
+// import { useState } from "react";
 
 function FirstComponent() {
+ // const [view, setView] = useState(false);
+
+ let isLoggedIn = false;
     return (
     <>
       
@@ -12,7 +16,70 @@ function FirstComponent() {
           <p>Job: Software Engineer</p>
         </div>
       </div>
+
+      {/* <button onClick={() => setView(true)}>Show Profile</button> */}
+
+
+    {isLoggedIn && 
     
+      <div style={{textAlign: 'center'}}>
+          Hi, Welcome to compileIT
+       </div>
+
+       
+       }
+
+
+      {/* {isLoggedIn && 
+    
+      <div style={{textAlign: 'center'}}>
+          Hi, Welcome to compileIT
+       </div>
+
+       <div>
+         What are your plans ?  -> This is wrong
+       </div>
+       
+       } */}
+
+
+        {/* {isLoggedIn && 
+
+    <>
+    
+      <div style={{textAlign: 'center'}}>
+          Hi, Welcome to compileIT
+       </div>
+                    
+       <div>                         
+         What are your plans ?
+       </div>
+    </>   
+       } */}
+
+{/* The above one is right we must enclose it in a single tag. */}
+
+
+  
+      {isLoggedIn ? 
+      
+       (<div style={{textAlign: 'center'}}>
+          Hi, Welcome to compileIT
+       </div>) :
+
+       (
+        <div>
+           Hey, you're not loggendin!!
+        </div>
+       )
+      
+      } 
+    
+      {/* // Three steps 
+      // 1. Replace && with ?
+      // 2. Wrap the tags with parenthesis.
+      // 3. use : and write another content and wrap it up in (). */}
+
     </>
     )
 }
