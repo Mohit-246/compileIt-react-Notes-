@@ -98,5 +98,63 @@ React Lecture 2 (17th June) - Displaying data, Adding style(2 ways), Conditional
            </>
   }
 
+
+  {condition ? (
+    <>
+      content1
+    </>
+  ) : (
+    <>
+      content2
+    </>
+  )}
+
+
+  To know about methods in react like map, forEach -> first practice it on plain JS array methods.
+
+
+{fruits.map((fruitName, id) => 
+            (
+                <div className="fruits">
+                    {fruitName}
+                </div>
+            )
+        )}
+
+  for(int i = 0; i < fruits.length; i++) {
+    fruits[i] -> fruitName 
+    i -> id
+  }
+
+  for(String fruitName : fruits) {
+      fruitName -> fruitName
+  }
+
+  for fruitName in fruits:
+      fruitName -> fruitName
+
+
+
+
 Lecture 3 - Props, Data passing, State in react (usestate, useffect)
+
+Suggestable Thing : 
+
+1. Always write proper ids, classname for each and every tags 
+2. For input fields write every attribute (placeholder, type, id, className)
+
+Testing team -> test your code / functionality (by 2 ways manual and automation).
+
+What makes you good developer is -> writing proper code with all conventions
+
+props - properties 
+
+- We can pass the data from one component to another component via props.
+
+- Props helps us to maintain / to pass consistent data.
+
+- We don't have to import components everywhere if u use props.
+
+
+How we can pass props ?
 

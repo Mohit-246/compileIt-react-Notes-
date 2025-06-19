@@ -1,13 +1,13 @@
 
 
-function SecondComponent() {
+function SecondComponent({vegetables}) {
     const fruits = ["Apple", "Banana", "Orange", "Mango", "Pineapple", "Papaya", "Strawberry"]
     return (
         <>
            <div className="flex"> 
             {fruits.map((fruitName, id) => 
             (
-                <div className="fruits">
+                <div key={id}  className="fruits">
                     {fruitName}
                 </div>
             )
@@ -20,6 +20,14 @@ function SecondComponent() {
            2. use parenthesis (element, id) => 
            3. Enclose it with again parenthesis ()
            4. Write a single fragment or div then inside render your content. */}
+        <div className="flex">
+                    {vegetables.map((vegetable, id) => (
+                        <div key={id} className="fruits">
+                            {vegetable}
+                        </div>
+                    ))}
+        </div>
+           
             
         </>
     )
