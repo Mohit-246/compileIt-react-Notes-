@@ -1,5 +1,6 @@
 import './App.css'
 import FirstComponent from './FirstComponent'
+import FourthComponent from './FourthComponent'
 import SecondComponent from './SecondComponent'
 import ThirdComponent from './ThirdComponent'
 
@@ -8,6 +9,10 @@ function App() {
 const vegetables = ["Cabbage", "Tomato", "Cauliflower", "Potato"]
   return (
   <>
+  
+  <div style={{textAlign: 'center'}}>
+      <FourthComponent />
+  </div>
 
           <ThirdComponent />
 
@@ -25,6 +30,8 @@ const vegetables = ["Cabbage", "Tomato", "Cauliflower", "Potato"]
       <FirstComponent /> */}
 
       <SecondComponent vegetables={vegetables}/>
+
+      
   </>
    
   )

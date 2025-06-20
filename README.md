@@ -158,3 +158,21 @@ props - properties
 
 How we can pass props ?
 
+
+So Lecture 4 - States
+
+They syntax of the state is 
+
+1. const -> write const variable
+
+2. const [] -> write list/array symbol
+
+3. const [name, setName] -> write 2 names one is a small/camelcase word, second word starts with setand then write capital word.
+
+4. const  [name, setName] = useState("") write useState() hook and initialize any value.
+
+ -> const  [value, setValue] = useState(0)
+
+   String name = "";       int value = 0;
+                            
+   name = ""               value = 0
