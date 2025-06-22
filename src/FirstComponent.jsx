@@ -6,7 +6,7 @@ function FirstComponent() {
  const [view, setView] = useState(false);
 
 
-
+console.log('component is rendered!')
 
  let isLoggedIn = false;
     return (

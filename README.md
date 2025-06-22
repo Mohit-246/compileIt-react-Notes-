@@ -176,3 +176,40 @@ They syntax of the state is
    String name = "";       int value = 0;
                             
    name = ""               value = 0
+
+
+Lecture 5 - Component Life cycle methods in react, and data sharing between components.
+
+
+What is Component life cycle ?
+
+- Previously we use class based components, currently we're using function based components!!
+
+- componentDidMount - you have just created one component and initialised it.
+- componentDidUpdate - Every updations, rendering of the component occurs in this phase.
+- componentWillUnMount - When you close the component / close the page where that component is active.
+
+Fun fact - A react component always renders 2 times!
+
+useEffect() -> one of the hook in the react , to execute the API calls, and for component life cycle we use this hook.
+
+API rate limiting
+
+The multiple API calls happening bcoz of multiple re-renderings.
+
+- if I call API calls multiple times unnecessarily -> It will lead the heavy load in database.
+
+-> Eventually your data will not get to anybody -> customers will get unsatisfied.
+
+That's where useEffect() was introduced.
+
+step 1 - useEffect()
+step 2 - write inside an arroe function - useEffect(() => {
+  //write your logic
+})
+
+step 3 - write dependency array after the arrow function - useEffect(() => {
+
+}, [])
+
+

@@ -1,4 +1,5 @@
 import './App.css'
+import FifthComponent from './FifthComponent'
 import FirstComponent from './FirstComponent'
 import FourthComponent from './FourthComponent'
 import SecondComponent from './SecondComponent'
@@ -31,7 +32,9 @@ const vegetables = ["Cabbage", "Tomato", "Cauliflower", "Potato"]
 
       <SecondComponent vegetables={vegetables}/>
 
-      
+      <hr></hr>
+
+      <FifthComponent />
   </>
    
   )
