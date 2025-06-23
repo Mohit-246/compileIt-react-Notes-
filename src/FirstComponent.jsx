@@ -1,6 +1,7 @@
 // import { useState } from "react";
 
 import { useState } from "react";
+import ThirdComponent from "./ThirdComponent";
 
 function FirstComponent() {
  const [view, setView] = useState(false);
@@ -11,6 +12,8 @@ console.log('component is rendered!')
  let isLoggedIn = false;
     return (
     <>
+
+    <ThirdComponent />
       
       {view && <div className="profileCard">
           <img src="https://imgcdn.stablediffusionweb.com/2024/4/7/76683d35-d0e9-4bf4-a630-99a6cc7da8c2.jpg" alt="" width={200} className="profileImg"/>

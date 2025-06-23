@@ -212,4 +212,36 @@ step 3 - write dependency array after the arrow function - useEffect(() => {
 
 }, [])
 
+Lecture 7 - Higher order components, React Router usage.
 
+
+Higher Order Components (HOCs) - It is an advanced react technique for reusing component logic
+
+Mandatory Condition - you can use the reusable component in functions which makes it enhanced component.
+
+We have a Homepage and Profilepage and both functions consists ProfileCard.jsx
+
+- you can use ProfileCard.jsx multiple time(re-use) by importing them in both components.
+
+- Now what components HOC ? - Homepage, ProfilePage functions caan become HOCs
+
+It is a function that accepts another component.
+
+and it returns a new component with enhanced version.
+
+
+React Router 
+
+- React router is a library that is used to redirect from one page to another page.
+
+Step 1 - install react-router, react-router-dom.
+
+Step 2 - Import 3 components - import { BrowserRouter, Route, Routes } from 'react-router'
+
+Step 3 - Use those components in the App.jsx in a hirerchiael way
+
+<BrowserRouter>
+  <Routes>
+     <Route path="/some/path" element={<SomeComponent />} />
+  </Routes>
+</BrowserRouter>
